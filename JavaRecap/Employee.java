@@ -1,6 +1,6 @@
 package JavaRecap;
 
-public abstract class Employee{
+public abstract class Employee implements SalariedEntity{
     private String name;
     private double salary;
 
@@ -14,6 +14,7 @@ public abstract class Employee{
         return this.name;
     }
 
+    @Override
     public double getSalary(){
         return this.salary;
     }
